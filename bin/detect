@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+
+test -f "$BUILD_DIR/build/release" || test -f "$BUILD_DIR/build/compile"

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+export BUILD_DIR=$1
+
+FILE=$BUILD_DIR/build/release
+
+if [ -f "$FILE" ]; then
+    $FILE || exit 1
+else
+    echo "---"
+fi
